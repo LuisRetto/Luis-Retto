@@ -33,7 +33,7 @@ public class gestionCandidato implements candidatoInterfaces  {
 		} catch (Exception e) {
 			
 			
-			System.out.println("Error en la sentencia: "+e.getMessage());
+			System.out.println("Error en la sentencia XDDDD : "+e.getMessage());
 			
 		}finally {
 			try {
