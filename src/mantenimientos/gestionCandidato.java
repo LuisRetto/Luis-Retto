@@ -34,7 +34,7 @@ public class gestionCandidato implements candidatoInterfaces  {
 			
 			
 			System.out.println("Error en la sentencia: "+e.getMessage());
-			// fuimos timados, timados? siiii >:v
+			// fuimos timados >:v
 			
 		}finally {
 			try {
