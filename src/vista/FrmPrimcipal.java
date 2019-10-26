@@ -136,9 +136,9 @@ public class FrmPrimcipal extends JFrame {
 				// salidas
 				
 				if(ok==0)
-					System.out.println("error");
+					System.out.println("ERROR");
 				else
-					System.out.println("registrar");
+					System.out.println("REGISTRAR");
 			
 	
 				Pattern Nom = Pattern.compile("[A-Za-z]{3,15}");
