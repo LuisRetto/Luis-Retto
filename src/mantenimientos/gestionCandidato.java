@@ -33,7 +33,9 @@ public class gestionCandidato implements candidatoInterfaces  {
 		} catch (Exception e) {
 			
 			
-			System.out.println("Error  :V en la sentencia XDDDD : "+e.getMessage());
+			System.out.println("Error en la sentencia: "+e.getMessage());
+			// fuimos timados >:v
+
 			
 		}finally {
 			try {
