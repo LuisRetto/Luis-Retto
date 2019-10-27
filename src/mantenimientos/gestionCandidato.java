@@ -22,7 +22,6 @@ public class gestionCandidato implements candidatoInterfaces  {
 		
 			String sql="update tb_candidato set	nomCandidato=?, apeCandidato=?, anioRegCandidato=?, partido=? where idCandidato=?;";
 			pa=con.prepareStatement(sql);
-		
 			
 			pa.setString(1,c.getNomCandidato());
 			pa.setString(2,c.getApeCandidato());
@@ -31,8 +30,6 @@ public class gestionCandidato implements candidatoInterfaces  {
 			pa.setInt(5,c.getIdCandidato());
 			rs=pa.executeUpdate();
 		} catch (Exception e) {
-			
-			
 			System.out.println("Error en la sentencia: "+e.getMessage());
 			// fuimos timados >:v
 

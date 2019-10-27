@@ -85,7 +85,7 @@ public class FrmPrimcipal extends JFrame {
 		txtNomCandidato.setColumns(10);
 		
 		txtApeCandidato = new JTextField();
-		txtApeCandidato.setBounds(164, 125, 114, 20);
+		txtApeCandidato.setBounds(164, 125, 93, 20);
 		contentPane.add(txtApeCandidato);
 		txtApeCandidato.setColumns(10);
 		
