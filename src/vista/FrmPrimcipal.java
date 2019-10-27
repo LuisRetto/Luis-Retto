@@ -159,7 +159,7 @@ public class FrmPrimcipal extends JFrame {
 				
 			}
 		});
-		btnRegistrar.setBounds(318, 124, 106, 23);
+		btnRegistrar.setBounds(318, 192, 106, 23);
 		contentPane.add(btnRegistrar);
 		
 		
