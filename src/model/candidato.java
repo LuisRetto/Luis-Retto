@@ -2,8 +2,8 @@ package model;
 
 public class candidato {
 
-	private int idCandidato;
-	private String nomCandidato, apeCandidato, anioRegCandidato, partido;
+	private int idCandidato,anioRegCandidato;
+	private String nomCandidato, apeCandidato,  partido;
 	
 	
 	public int getIdCandidato() {	return idCandidato;}
@@ -11,8 +11,8 @@ public class candidato {
 	
 	
 	
-	public String getAnioRegCandidato() {	return anioRegCandidato;}
-	public void setAnioRegCandidato(String anioRegCandidato) {	this.anioRegCandidato = anioRegCandidato;}
+	public int getAnioRegCandidato() {	return anioRegCandidato;}
+	public void setAnioRegCandidato(int anioRegCandidato) {	this.anioRegCandidato = anioRegCandidato;}
 	
 	
 	

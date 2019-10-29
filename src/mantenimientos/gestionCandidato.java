@@ -15,20 +15,20 @@ public class gestionCandidato implements candidatoInterfaces  {
 		Connection con = null;
 		
 		PreparedStatement pa =null;
-			
+		System.out.println("TESTEAR 1.0");
 		try {
-			
+			System.out.println("Entrando a mantenimiento 1.0");
 			con=MySQLConexión.getConexion();
-		
 			String sql="update tb_candidato set	nomCandidato=?, apeCandidato=?, anioRegCandidato=?, partido=? where idCandidato=?;";
 			pa=con.prepareStatement(sql);
 			
 			pa.setString(1,c.getNomCandidato());
 			pa.setString(2,c.getApeCandidato());
-			pa.setString(3,c.getAnioRegCandidato());
+			pa.setInt(3,c.getAnioRegCandidato());
 			pa.setString(4,c.getPartido());
 			pa.setInt(5,c.getIdCandidato());
 			rs=pa.executeUpdate();
+			System.out.println("Entrando a mantenimiento 5.0");
 		} catch (Exception e) {
 			System.out.println("Error en la sentencia: "+e.getMessage());
 			// fuimos timados >:v

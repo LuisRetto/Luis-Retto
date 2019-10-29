@@ -111,14 +111,14 @@ public class FrmPrimcipal extends JFrame {
 				
 				// variables
 			
-				int id;
-				String nombre,apellido,año, partido,idd;
+				int id,año;
+				String nombre,apellido,partido,idd;
 			
 				
 				// entradas
 				nombre=txtNomCandidato.getText();
 				apellido=txtApeCandidato.getText();
-				año=txtAñoReg.getText();
+				año=Integer.parseInt(txtAñoReg.getText());
 				partido=txtNomPartido.getText();
 				id=Integer.parseInt(txtIdCandidato.getText());
 				idd= txtIdCandidato.getText();
@@ -135,20 +135,20 @@ public class FrmPrimcipal extends JFrame {
 				int ok =gc.Registrar(c);
 				// salidas
 				
-				if(ok==0)
+				if(!(ok==0))
 					System.out.println("ERROR");
 				else
 					System.out.println("REGISTRAR");
 			
 	
-				Pattern Nom = Pattern.compile("[A-Za-z]{3,15}");
+				/*Pattern Nom = Pattern.compile("[A-Za-z]{3,15}");
 				Matcher N = Nom.matcher(nombre);
 				Matcher A = Nom.matcher(apellido);
 				
 
 				Pattern Cod= Pattern.compile("[0-9]{1}");					
-				Matcher i = Cod.matcher(idd);
-				Matcher añ = Cod.matcher(año);
+				Matcher i = Cod.matcher(idd);*/
+				//Matcher añ = Cod.matcher(año);
 				
 				
 				
